@@ -1,0 +1,13 @@
+{
+  "productName": "Type B - Windows AI Workstation",
+  "release": "4.0",
+  "outputIso": "TypeB-Windows-AI-Workstation-v4.0.iso",
+  "cleanupWindowsPackagesAfterSuccess": false,
+  "requiredFreeSpaceGB": 100,
+  "requireAssetLock": true,
+  "noRuntimeNetwork": true,
+  "requireUbuntuVm": true,
+  "requireLinuxBaseline": true,
+  "firstLogonWslImport": true,
+  "sourceIsoSha256": "bd4307df32bc8af33b39ccecb1174aeb345386630f89a2b86c7a4e36b55ea650"
+}

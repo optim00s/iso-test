@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "ubuntuVersion": "22.04",
+  "architecture": "x86_64",
+  "mode": "wsl",
+  "checkedUtc": "2026-10-08T12:25:23.00225+04:00",
+  "python": "Python 3.13.13",
+  "uv": "uv 0.11.19 (x86_64-unknown-linux-gnu)",
+  "conda": "conda 25.11.0",
+  "docker": "Docker version 29.8.2, build 7fc2dff",
+  "compose": "Docker Compose version v5.6.0",
+  "checks": {
+    "git": true,
+    "git-lfs": true,
+    "ssh": true,
+    "curl": true,
+    "wget": true,
+    "tmux": true,
+    "ffmpeg": true,
+    "ffprobe": true,
+    "gcc": true,
+    "g++": true,
+    "make": true,
+    "cmake": true,
+    "uv": true,
+    "conda": true,
+    "python3.13": true,
+    "docker": true,
+    "compose": true
+  },
+  "imageSha256": "871fa19404e1194a5422a5c72d8ab6c6f5f42e2cd9d2109a7e1668106174b3f7"
+}

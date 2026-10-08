@@ -1,0 +1,531 @@
+﻿{
+    "schemaVersion":  1,
+    "created":  "2026-10-08T11:51:34.2870716Z",
+    "files":  [
+                  {
+                      "relativePath":  "linux/TypeB-Ubuntu-22.04-WSL-Docker.tar",
+                      "sha256":  "871fa19404e1194a5422a5c72d8ab6c6f5f42e2cd9d2109a7e1668106174b3f7",
+                      "size":  9249177600,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/TypeB-Ubuntu-22.04-WSL-Docker.tar.baseline.json",
+                      "sha256":  "bcf89591987a308e8341c8c7cdd55e3fb03bae30da6e9f9086acf88dabdf99d9",
+                      "size":  810,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/TypeB-Ubuntu-22.04-WSL-Docker.tar.sha256",
+                      "sha256":  "5353b39cb7617f696479e2a64067ab57d26214010caac44d9c81b1ca39e45d1f",
+                      "size":  101,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/ubuntu-22.04.5-desktop-amd64.iso",
+                      "sha256":  "bfd1cee02bc4f35db939e69b934ba49a39a378797ce9aee20f6e3e3e728fefbf",
+                      "size":  4762707968,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/baseline.json",
+                      "sha256":  "55e3b20eaabce1852f93b9c761318a69d6839b0e9939f0c49e9ca0148aca632b",
+                      "size":  692,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/mksSandbox.log",
+                      "sha256":  "467baf407c3df979bb302be23acd22df97864e1d701e668101f8a3bce69a7fa6",
+                      "size":  62671,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04.nvram",
+                      "sha256":  "7d30126ca00520c9631f90796bb41b9c2761ef3a9c8dfc62f67956449258f1a3",
+                      "size":  8684,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04.scoreboard",
+                      "sha256":  "a7075ec16bec2afe63b84f642025cdd3324cfb08cb2cc66ff89569848bf04796",
+                      "size":  7910,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04.vmdk",
+                      "sha256":  "0d346b9d061186c3ff65775a1ad846b075cb9b1eab9316499de566a98227b9d2",
+                      "size":  1371,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04.vmsd",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "size":  0,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04.vmxf",
+                      "sha256":  "5a18e81b54c5f68b7984beec7c1df36b9d3ea4811306b8a8c8bdc3e335c587ce",
+                      "size":  276,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s001.vmdk",
+                      "sha256":  "583dd78ee172932f2f5fdf60a9d806e985785f387d2bb01ec6fa681a21c097e8",
+                      "size":  1299447808,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s002.vmdk",
+                      "sha256":  "6365484cfc5b5b767e4d4137456df814feff1c632c081df29d10a3cf21babf59",
+                      "size":  4071751680,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s003.vmdk",
+                      "sha256":  "652f31ce03b0878a6e57aff559348137d37d3c950b12a408d7991fdbe3662dcf",
+                      "size":  3875930112,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s004.vmdk",
+                      "sha256":  "aa3b3be1d3011a7aec2825fd5f3bd33ecac9a3590b58e8f56d0971863e2368b6",
+                      "size":  114819072,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s005.vmdk",
+                      "sha256":  "c66b2fbd041771d0794d2c30fa2e59cb877b6c118a1e24092b83ea5300f96d3a",
+                      "size":  917504,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s006.vmdk",
+                      "sha256":  "aee3760590c97d9c8a82098040734849a5768e3bb3e5d5b7db2db21be12e76df",
+                      "size":  655360,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s007.vmdk",
+                      "sha256":  "9a7d609ba3b7733d4e1e311de6ccc42f2911eccfff0940320ba194d1a22fced4",
+                      "size":  917504,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s008.vmdk",
+                      "sha256":  "2d2d25ae2dfefb57b5a16354dcaf2ab6a40d75d3b4a636e136d73c5ddefab779",
+                      "size":  269156352,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s009.vmdk",
+                      "sha256":  "1e3413e9626a4d80c7a8753904b5021e8dc3cca3fd7c22fd8b37dbb418d3a5a5",
+                      "size":  49545216,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s010.vmdk",
+                      "sha256":  "953342b8d893e9d310a87c71cdad6d36e34f6b355f2562bba4cd162da37f489d",
+                      "size":  1987444736,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s011.vmdk",
+                      "sha256":  "97ea8548ea58e4a07f2241ea0807d9684e546509815e44db825a6c8b98a8df88",
+                      "size":  1422196736,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s012.vmdk",
+                      "sha256":  "3dfcdfca453ca67560173e9cce74685191f119278abebba29e95949ff51283eb",
+                      "size":  72876032,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s013.vmdk",
+                      "sha256":  "69bfaac87a0efa6e7ee6ab325758e238735c984cf3b7fe8a37b226d04a141cdc",
+                      "size":  655360,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s014.vmdk",
+                      "sha256":  "354abbfa73568ddb592676356fead3084f8351f39c74628081319ccd5d10b373",
+                      "size":  1179123712,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s015.vmdk",
+                      "sha256":  "66248b167cb8f728e8db0f859fa5e5486b0e1b74b2d53cc406566b06e6293601",
+                      "size":  1807286272,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s016.vmdk",
+                      "sha256":  "7c9121e8d23d11ae1ed806cae1af2876b81660f56f19dd96ae20ddaad9fa6b40",
+                      "size":  4016111616,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/Prepared-Ubuntu-22.04-s017.vmdk",
+                      "sha256":  "d1d805e9ad9bbf4c31ec03da99ec8d17f4f00180768bc67de3190512b343ffc4",
+                      "size":  534118400,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/TypeB-Ubuntu-22.04.vmx",
+                      "sha256":  "5fe0b74690a3b27b975fc3fc924820b455061e79f1cfd5ecdc8a6c21c9fda47f",
+                      "size":  4159,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "linux/Ubuntu-22.04-VM/vmware.log",
+                      "sha256":  "228305b7d19a45e140585bbd69d4a872cf442ffc0e27e376c5bc1221c292897a",
+                      "size":  384322,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/configuration.xml",
+                      "sha256":  "1d7fb0c08f0bdf8a30fb12f272530e7083b17a1d6b7a0dd21dfb894eb05c5487",
+                      "size":  433,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/odt-source/OfficeDeploymentTool-fbb64358fd4168acd52ee4efe47ffd032b6231dfb415ae2dce61b0e58ba67f86.exe",
+                      "sha256":  "fbb64358fd4168acd52ee4efe47ffd032b6231dfb415ae2dce61b0e58ba67f86",
+                      "size":  3522096,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/a640_exp.cab",
+                      "sha256":  "f6d951f5f3089ef085767070e932f88074104851a73d0545424ca2ff4a9018cc",
+                      "size":  4360020,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/i640.cab",
+                      "sha256":  "b3b985aa9df5181244abadee856ae369bcc2516ab2a93afa5f1112f72b60259c",
+                      "size":  33126804,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/i640.cab.cat",
+                      "sha256":  "3eddd2b53250fd09b04208334b7e4e1c3f2333012877503e444e6d356f4f21bb",
+                      "size":  33787,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/i641033.cab",
+                      "sha256":  "b2fc7ba21559ddcdbd11e5ed7afb152980223916aae096fc6d19f4c160387bae",
+                      "size":  10943,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/s640.cab",
+                      "sha256":  "dac554dbd741d71e3b488449afef445cd8015816dabc59524258426356ee7077",
+                      "size":  2012123,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/s641033.cab",
+                      "sha256":  "d73a721f7c5eac3449b507137f9560778b8c94d137ef7b11b9e361f36bc9e010",
+                      "size":  352546,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/sa640.cab",
+                      "sha256":  "99988f585252dae84cc3a7d75eacc27e3253c8ad2fe92234cef71cbc8cb5c621",
+                      "size":  151808,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/stream.x64.en-us.dat",
+                      "sha256":  "192427e2d22d3f24b6036834b802b619751561603aeede5a8afc6bca1c1f8f21",
+                      "size":  366742051,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/stream.x64.en-us.dat.cat",
+                      "sha256":  "9455b8c7c45c09a10e2a7df49ed037fd9af1ab8bb81174e883d5dc343dda86fa",
+                      "size":  80731,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/stream.x64.x-none.arm64x.dat",
+                      "sha256":  "367a8cfc1beda9a8b77c19be4e0f817471dbdffbe4be1615d498a02bff82da42",
+                      "size":  476405418,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/stream.x64.x-none.arm64x.dat.cat",
+                      "sha256":  "824309c9b86b1e6eba777ca2d8e12d1bb5a5095ab978f37a6cb98aff39868736",
+                      "size":  364054,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/stream.x64.x-none.dat",
+                      "sha256":  "730450aafbc09c8697d175e88244d6c41940155eff455ce9f7f6ad8771b83e90",
+                      "size":  2922023064,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/16.0.20430.20146/stream.x64.x-none.dat.cat",
+                      "sha256":  "4f9fdc727e91099d267dd796e849ca4c35ac3f4fcf1322b0d948ccac8ce1d07c",
+                      "size":  1084711,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/v64.cab",
+                      "sha256":  "9b6b9abad01baf204385b1b907b086c07f390b95377350cac7a90ed44ca19eae",
+                      "size":  12305,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/Office/Data/v64_16.0.20430.20146.cab",
+                      "sha256":  "9b6b9abad01baf204385b1b907b086c07f390b95377350cac7a90ed44ca19eae",
+                      "size":  12305,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "office/setup.exe",
+                      "sha256":  "50facf295f357d8230b4d50678536148e32f34b4ac33387269d5a72c93ff810a",
+                      "size":  7194464,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                  },
+                  {
+                      "relativePath":  "office/SHA256SUMS",
+                      "sha256":  "418abafabbdcba898a3eea0e87d281b517d21fd1a9835facb077e1b25d7a9a21",
+                      "size":  2006,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "vsix/charliermarsh.ruff.vsix",
+                      "sha256":  "6dc09859dcdfd5adda5a7788cd9bcfc09561f2d9b49a41327ce0922a692f65fe",
+                      "size":  11512790,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "vsix/ms-python.python.vsix",
+                      "sha256":  "b4d268561318307a4a411d4842db69728fb27f15270a9bd7f581b8bb91f64734",
+                      "size":  9417419,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "vsix/ms-python.vscode-pylance.vsix",
+                      "sha256":  "3e6c9d0ba0c6680e6ef28d1af5c6e13844e39a871e5404cbfaaaedb5cd0d8cfb",
+                      "size":  29351447,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "vsix/ms-toolsai.jupyter.vsix",
+                      "sha256":  "8c62666a137784c2f6c3e0df0b6e5a52a44afe796ba75a928356a1141cce4d6e",
+                      "size":  6818952,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "vsix/ms-vscode-remote.remote-ssh.vsix",
+                      "sha256":  "458bfdea562840a3a4d9cb246cfe9a212c67a0c9317a8fdd0d22aeaedc82bf2c",
+                      "size":  744363,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "vsix/ms-vscode-remote.remote-wsl.vsix",
+                      "sha256":  "22534172b809daa91b26d34ea2764692e24760bf07a3b1156f61e56cc8a6c4af",
+                      "size":  1620273,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "windows/7z-x64.exe",
+                      "sha256":  "d54bf805f9f3704d1e8db2fa3498ae7ef2df0312b40b558e7c71c734430a665d",
+                      "size":  1664082,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "windows/Anaconda3-Windows-x86_64.exe",
+                      "sha256":  "b545f4bd8ab3bf32d99002a0779a887668ebfe479ee32ecbf060375670d5ee09",
+                      "size":  1112492048,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=\"Anaconda, Inc.\", O=\"Anaconda, Inc.\", L=Austin, S=Texas, C=US, SERIALNUMBER=5073497, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Delaware, OID.1.3.6.1.4.1.311.60.2.1.3=US"
+                  },
+                  {
+                      "relativePath":  "windows/cmake-x64.msi",
+                      "sha256":  "f7aac962e8eea82c0a1c603bb11ee3514806a43a35147d5b1e9d69926ffd7d7e",
+                      "size":  39145472,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=\"Kitware, Inc.\", O=\"Kitware, Inc.\", L=Clifton Park, S=New York, C=US, SERIALNUMBER=2235734, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=New York, OID.1.3.6.1.4.1.311.60.2.1.3=US"
+                  },
+                  {
+                      "relativePath":  "windows/ffmpeg-win64.zip",
+                      "sha256":  "1ceca50d60cba0b05e366ab6409c726bad084e3d0477fa003e37b4a9f73cfbf8",
+                      "size":  200216113,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "windows/Git-64-bit.exe",
+                      "sha256":  "52188f917b378f00c70ec136bcf090005f30d44fbc4eba0bce759cc6592d60f6",
+                      "size":  66763664,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=Johannes Schindelin, O=Johannes Schindelin, L=Bruehl, C=DE"
+                  },
+                  {
+                      "relativePath":  "windows/LM-Studio-Setup.exe",
+                      "sha256":  "76c025ef4abf38edac36da09ce1a54d2803b3871a074b95bd9dffdb231458f0c",
+                      "size":  616728536,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=Element Labs Inc., O=Element Labs Inc., L=Brooklyn, S=New York, C=US, SERIALNUMBER=6659187, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Delaware, OID.1.3.6.1.4.1.311.60.2.1.3=US"
+                  },
+                  {
+                      "relativePath":  "windows/Microsoft.WindowsTerminal.msixbundle",
+                      "sha256":  "dbc240a34e327fa65fc5edabe523a55cdc3a1b165f067e291c165cdc811269dd",
+                      "size":  24542484,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "windows/MSTeams-x64.msix",
+                      "sha256":  "aad2a374b959760ea2ce9dfd5ffb5a83ce410b6a6914170f0a3d3985762dfb85",
+                      "size":  287174703,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "windows/Nextcloud-x64.msi",
+                      "sha256":  "ad048c193f9bbb577dc8b7bfde2f3f0a3be845bcd1585105ce62be0af4ab57ce",
+                      "size":  138260480,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=Nextcloud GmbH, O=Nextcloud GmbH, S=Baden-Wuerttemberg, C=DE"
+                  },
+                  {
+                      "relativePath":  "windows/python-3.13-amd64.exe",
+                      "sha256":  "fb4f9f5d438b2396da0086dc70b935c530cb578e37adc6d354f7ad2037fee83b",
+                      "size":  29935584,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=Python Software Foundation, O=Python Software Foundation, L=Beaverton, S=Oregon, C=US"
+                  },
+                  {
+                      "relativePath":  "windows/Qsync-x64.exe",
+                      "sha256":  "510167c7cb7c777a1248d46da3989f94f04a725518a0061097ad9488444b5f77",
+                      "size":  32128048,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=\"QNAP Systems, Inc.\", O=\"QNAP Systems, Inc.\", S=New Taipei City, C=TW"
+                  },
+                  {
+                      "relativePath":  "windows/teamsbootstrapper.exe",
+                      "sha256":  "c9d1c68b1f9048e6d04bc4313a4036f91c255df0988c4d876f687b5c1140440d",
+                      "size":  2035352,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                  },
+                  {
+                      "relativePath":  "windows/TerminalDependencies/Microsoft.UI.Xaml.2.8.x64.appx",
+                      "sha256":  "1421dba0b7f1da87e6ad52e17c25d38bcd2159bd7f91c85034cfa837238abaaa",
+                      "size":  4932225,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "windows/TerminalDependencies/Microsoft.UI.Xaml.2.8.x64.appx.sha256",
+                      "sha256":  "23fd34ad3fabe1e3ce8375e24d13c158c105132d638b96d8297ef4317800aeaa",
+                      "size":  97,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "windows/uv-x86_64-pc-windows-msvc.zip",
+                      "sha256":  "75d05de6762778c31ee183398de7dd15093fad0ed90b1f236d8205ea5ec00c90",
+                      "size":  18043715,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "windows/VMware-workstation-full.exe",
+                      "sha256":  "a0ef9087607d9cad20b08139e73e41242e044ad5bd8cee141d3bad314586737f",
+                      "size":  287670872,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=Broadcom Inc, O=Broadcom Inc, L=San Jose, S=California, C=US, SERIALNUMBER=6610117, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Delaware, OID.1.3.6.1.4.1.311.60.2.1.3=US"
+                  },
+                  {
+                      "relativePath":  "windows/VSCodeSetup-x64.exe",
+                      "sha256":  "1a898864f5ee9c234ae349a437b2198ec3e4008a9725491a28750750dbbf4c88",
+                      "size":  251827616,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                  },
+                  {
+                      "relativePath":  "windows/wget.exe",
+                      "sha256":  "f83fa72b6052c541dd062546064a6106aac3888960ebb2175765f1209489e10e",
+                      "size":  8416256,
+                      "signatureStatus":  null,
+                      "signer":  null
+                  },
+                  {
+                      "relativePath":  "windows/winrar-x64.exe",
+                      "sha256":  "23a94368c1af3d740019d48a78dcc9694c6d543a19cd0d449c4163cadfc5cfe7",
+                      "size":  3794664,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=win.rar GmbH, O=win.rar GmbH, STREET=Marienstr. 12, PostalCode=10117, L=Berlin, S=Berlin, C=DE, SERIALNUMBER=HRB 109885 B, OID.1.3.6.1.4.1.311.60.2.1.1=Berlin, OID.1.3.6.1.4.1.311.60.2.1.2=Berlin, OID.1.3.6.1.4.1.311.60.2.1.3=DE, OID.2.5.4.15=Private Organization"
+                  },
+                  {
+                      "relativePath":  "windows/wsl-x64.msi",
+                      "sha256":  "28b1a0d013640a2ac95898ea705fa186e5b4ff767a1c1b49257161bc106599c6",
+                      "size":  367669248,
+                      "signatureStatus":  "Valid",
+                      "signer":  "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+                  }
+              ]
+}

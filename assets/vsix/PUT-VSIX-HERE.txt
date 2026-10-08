@@ -1,0 +1,12 @@
+Place the six VSIX files named in config\vsix.json here.
+
+Required files:
+
+ms-python.python.vsix
+ms-python.vscode-pylance.vsix
+ms-toolsai.jupyter.vsix
+charliermarsh.ruff.vsix
+ms-vscode-remote.remote-ssh.vsix
+ms-vscode-remote.remote-wsl.vsix
+
+The filenames must match exactly.

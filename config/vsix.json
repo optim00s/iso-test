@@ -1,0 +1,10 @@
+{
+  "required": [
+    "ms-python.python.vsix",
+    "ms-python.vscode-pylance.vsix",
+    "ms-toolsai.jupyter.vsix",
+    "charliermarsh.ruff.vsix",
+    "ms-vscode-remote.remote-ssh.vsix",
+    "ms-vscode-remote.remote-wsl.vsix"
+  ]
+}

@@ -1,0 +1,8 @@
+# SHA256SUMS.txt pins source bytes. Do not change line endings on add/clone.
+* -text
+*.ps1 diff
+*.sh diff
+*.md diff
+*.json diff
+*.xml diff
+*.txt diff

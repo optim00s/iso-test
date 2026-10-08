@@ -1,0 +1,273 @@
+[
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code (System Installer)",
+    "required": true,
+    "method": "exe",
+    "file": "windows/VSCodeSetup-x64.exe",
+    "args": "/VERYSILENT /NORESTART /MERGETASKS=!runcode,addcontextmenufiles,addcontextmenufolders,addtopath",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\Microsoft VS Code\\Code.exe"
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "git",
+    "name": "Git for Windows",
+    "required": true,
+    "method": "exe",
+    "file": "windows/Git-64-bit.exe",
+    "args": "/VERYSILENT /NORESTART /NOCANCEL /SP-",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\Git\\cmd\\git.exe"
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "git-lfs",
+    "name": "Git LFS",
+    "required": true,
+    "method": "bundled",
+    "file": "windows/Git-64-bit.exe",
+    "args": "",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\Git\\cmd\\git-lfs.exe"
+    },
+    "requireSignature": true,
+    "notes": "Git for Windows includes Git LFS. The runtime verifies the bundled binary and runs git lfs install --system."
+  },
+  {
+    "id": "7zip",
+    "name": "7-Zip",
+    "required": true,
+    "method": "exe",
+    "file": "windows/7z-x64.exe",
+    "args": "/S",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\7-Zip\\7z.exe"
+    },
+    "requireSignature": false,
+    "expectedSha256": "d54bf805f9f3704d1e8db2fa3498ae7ef2df0312b40b558e7c71c734430a665d",
+    "sourceUrl": "https://github.com/ip7z/7zip/releases/download/26.04/7z2604-x64.exe",
+    "notes": "The official 7-Zip 26.04 x64 installer is unsigned. Locking requires this publisher-release SHA256 instead."
+  },
+  {
+    "id": "winrar",
+    "name": "WinRAR x64",
+    "required": true,
+    "method": "exe",
+    "file": "windows/winrar-x64.exe",
+    "args": "/S",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\WinRAR\\WinRAR.exe"
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "nextcloud",
+    "name": "Nextcloud Desktop Client",
+    "required": true,
+    "method": "msi",
+    "file": "windows/Nextcloud-x64.msi",
+    "args": "",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\Nextcloud\\nextcloud.exe"
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "qsync",
+    "name": "QNAP Qsync Client",
+    "required": true,
+    "method": "exe",
+    "file": "windows/Qsync-x64.exe",
+    "args": "/S",
+    "detect": {
+      "type": "registryDisplayName",
+      "value": "QNAP Qsync"
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "python",
+    "name": "Python 3.13 x64",
+    "required": true,
+    "method": "exe",
+    "file": "windows/python-3.13-amd64.exe",
+    "args": "/quiet InstallAllUsers=1 PrependPath=1 Include_launcher=1 InstallLauncherAllUsers=1 Include_test=0 TargetDir=\"C:\\Program Files\\Python313\"",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\Python313\\python.exe"
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "anaconda",
+    "name": "Anaconda Distribution",
+    "required": true,
+    "method": "exe",
+    "file": "windows/Anaconda3-Windows-x86_64.exe",
+    "args": "/S /InstallationType=AllUsers /AddToPath=0 /RegisterPython=0 /D=C:\\ProgramData\\Anaconda3",
+    "detect": {
+      "type": "file",
+      "value": "C:\\ProgramData\\Anaconda3\\Scripts\\conda.exe"
+    },
+    "requireSignature": true,
+    "systemPathAdd": [
+      "C:\\ProgramData\\Anaconda3\\condabin"
+    ]
+  },
+  {
+    "id": "cmake",
+    "name": "CMake x64",
+    "required": true,
+    "method": "msi",
+    "file": "windows/cmake-x64.msi",
+    "args": "ADD_CMAKE_TO_PATH=System",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\CMake\\bin\\cmake.exe"
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "uv",
+    "name": "uv for Windows",
+    "required": true,
+    "method": "zipSingleRoot",
+    "file": "windows/uv-x86_64-pc-windows-msvc.zip",
+    "destination": "C:\\Program Files\\uv",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\uv\\uv.exe"
+    },
+    "requireSignature": false,
+    "systemPathAdd": [
+      "C:\\Program Files\\uv"
+    ]
+  },
+  {
+    "id": "ffmpeg",
+    "name": "FFmpeg / ffprobe",
+    "required": true,
+    "method": "zipSingleRoot",
+    "file": "windows/ffmpeg-win64.zip",
+    "destination": "C:\\Program Files\\FFmpeg",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\FFmpeg\\bin\\ffmpeg.exe"
+    },
+    "requireSignature": false,
+    "systemPathAdd": [
+      "C:\\Program Files\\FFmpeg\\bin"
+    ]
+  },
+  {
+    "id": "wget",
+    "name": "wget for Windows",
+    "required": true,
+    "method": "copy",
+    "file": "windows/wget.exe",
+    "destination": "C:\\Program Files\\wget\\wget.exe",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\wget\\wget.exe"
+    },
+    "requireSignature": false,
+    "systemPathAdd": [
+      "C:\\Program Files\\wget"
+    ]
+  },
+  {
+    "id": "teams",
+    "name": "Microsoft Teams (offline machine provision)",
+    "required": true,
+    "method": "teamsOffline",
+    "file": "windows/teamsbootstrapper.exe",
+    "secondaryFile": "windows/MSTeams-x64.msix",
+    "detect": {
+      "type": "provisionedAppx",
+      "value": "MSTeams"
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "wsl-runtime",
+    "name": "WSL offline x64 runtime",
+    "required": true,
+    "method": "msi",
+    "file": "windows/wsl-x64.msi",
+    "args": "",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\WSL\\wsl.exe"
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "windows-terminal",
+    "name": "Windows Terminal Preview (included offline bundle)",
+    "required": true,
+    "method": "provisionedAppx",
+    "file": "windows/Microsoft.WindowsTerminal.msixbundle",
+    "dependencyFolder": "windows/TerminalDependencies",
+    "detect": {
+      "type": "provisionedAppx",
+      "value": "Microsoft.WindowsTerminalPreview"
+    },
+    "requireSignature": true,
+    "notes": "The supplied bundle identity is Microsoft.WindowsTerminalPreview. Replace both asset and detection identity if a stable package is selected."
+  },
+  {
+    "id": "office",
+    "name": "Microsoft 365 Apps",
+    "required": true,
+    "method": "officeODT",
+    "file": "office/setup.exe",
+    "officeConfig": "office/configuration.xml",
+    "detect": {
+      "type": "fileAll",
+      "value": [
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\ONENOTE.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE"
+      ]
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "vmware",
+    "name": "VMware Workstation Pro",
+    "required": true,
+    "method": "exe",
+    "file": "windows/VMware-workstation-full.exe",
+    "args": "/s /v\"/qn EULAS_AGREED=1 AUTOSOFTWAREUPDATE=0 DATACOLLECTION=0\"",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files (x86)\\VMware\\VMware Workstation\\vmware.exe"
+    },
+    "requireSignature": true
+  },
+  {
+    "id": "lmstudio",
+    "name": "LM Studio",
+    "required": true,
+    "method": "exe",
+    "file": "windows/LM-Studio-Setup.exe",
+    "args": "/S /allusers",
+    "detect": {
+      "type": "file",
+      "value": "C:\\Program Files\\LM Studio\\LM Studio.exe"
+    },
+    "requireSignature": true,
+    "notes": "Must support NSIS /allusers and install into Program Files. A per-user/SYSTEM profile installation is rejected; validate this exact package in the disposable VM."
+  }
+]

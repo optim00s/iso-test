@@ -1,0 +1,9 @@
+{
+  "ubuntuVersion": "22.04",
+  "pythonVersion": "3.13",
+  "uvVersion": "0.11.19",
+  "uvArchive": "uv-x86_64-unknown-linux-gnu.tar.gz",
+  "anacondaInstaller": "Anaconda3-2025.12-1-Linux-x86_64.sh",
+  "anacondaUrl": "https://repo.anaconda.com/archive/Anaconda3-2025.12-1-Linux-x86_64.sh",
+  "anacondaSha256": "132f1f312d05e391906b959ad83aa411b97ece55966bb34df011ef41ba60a35c"
+}
