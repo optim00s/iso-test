@@ -1,7 +1,7 @@
 {
   "productName": "Type B - Windows AI Workstation",
-  "release": "4.0",
-  "outputIso": "TypeB-Windows-AI-Workstation-v4.0.iso",
+  "release": "4.1",
+  "outputIso": "TypeB-Windows-AI-Workstation-v4.1.iso",
   "cleanupWindowsPackagesAfterSuccess": false,
   "requiredFreeSpaceGB": 100,
   "requireAssetLock": true,

@@ -1,5 +1,15 @@
 # Type B — Windows AI Workstation Offline ISO
 
+**4.1 codebase — 2026-10-10:** Qsync, VMware, WSL və VSIX recovery düzəlişləri
+normal build axınına daxil edilib. Beş runtime faylının yeganə mənbəyi runtime/
+qovluğudur; builder onları hər ISO-ya məcburi yerləşdirir və hash-lərini qeyd edir.
+**4.1 ISO 2026-10-10 tarixində yaradılıb.** Build, asset/security yoxlamaları və
+ISO daxilində 84 faylın SHA-256 yoxlaması keçib. Təmiz VM quraşdırması və fiziki
+noutbukda USB boot/qəbul testi hələ gözlənilir; bu versiya sınaq namizədidir.
+GitHub yalnız kod və metadata saxlayır; böyük asset-lər və ISO daxil deyil.
+[ISO yoxlama nəticələri](validation/MEDIA-VALIDATION.md).
+[Düzəlişlər, build və qəbul ardıcıllığı](BUILD-NOTES.md).
+
 Bu layihə yalnız **Type B** üçündür: Windows 11 x64, WSL2 üzərində Ubuntu
 22.04 LTS, Docker Engine və ayrıca hazır Ubuntu 22.04 LTS VMware VM.
 
@@ -40,7 +50,8 @@ iso-test/
   README.md
   config/                  apps.json, vsix.json, build.json, assets.lock.json
   scripts/                 acquisition, provisioning, restore və build yoxlamaları
-  overlay/                 Autounattend.xml və target runtime scriptləri
+  runtime/                 beş canonical target runtime faylı
+  overlay/                 Autounattend.xml və SetupComplete fallback
   tests/                   VMware təlimatı və versiya command-ları
   source/
     Windows11-x64.iso       original Microsoft Windows ISO; ayrıca əldə edilir
@@ -343,7 +354,7 @@ qovluğuna `baseline.json` adı ilə köçür. VM-i tam söndür və staging et:
 .\Build-TypeB-ISO.ps1 -SourceIso ".\source\Windows11-x64.iso"
 ```
 
-Çıxış: `output\TypeB-Windows-AI-Workstation-v4.0.iso`, onun `.sha256` faylı və
+Çıxış: `output\TypeB-Windows-AI-Workstation-v4.1.iso`, onun `.sha256` faylı və
 `build-manifest.json`. Rufus həmin **yekun Type B ISO** ilə hazırlanmalıdır.
 
 ## Qəbul yoxlaması

@@ -6,3 +6,6 @@
 *.json diff
 *.xml diff
 *.txt diff
+
+# Allow native Windows source line endings while still checking real whitespace.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

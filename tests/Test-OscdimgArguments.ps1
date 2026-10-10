@@ -4,6 +4,7 @@ param(
   [string]$OscdimgPath = "${env:ProgramFiles(x86)}\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\Oscdimg\oscdimg.exe"
 )
 $ErrorActionPreference='Stop'
+$BootMediaRoot=$env:TypeBTestBootMedia
 $root=Split-Path $PSScriptRoot -Parent
 $tokens=$null; $errors=$null
 $ast=[Management.Automation.Language.Parser]::ParseFile((Join-Path $root 'Build-TypeB-ISO.ps1'),[ref]$tokens,[ref]$errors)
@@ -18,8 +19,14 @@ try {
   New-Item -ItemType Directory -Path $work | Out-Null
   $bios=Join-Path $work 'etfsboot.com'
   $uefi=Join-Path $work 'efisys.bin'
-  Copy-Item -LiteralPath (Join-Path $root 'work\iso\boot\etfsboot.com') -Destination $bios
-  Copy-Item -LiteralPath (Join-Path $root 'work\iso\efi\microsoft\boot\efisys.bin') -Destination $uefi
+  if($BootMediaRoot){
+    Copy-Item -LiteralPath (Join-Path $BootMediaRoot 'boot\etfsboot.com') -Destination $bios
+    Copy-Item -LiteralPath (Join-Path $BootMediaRoot 'efi\microsoft\boot\efisys.bin') -Destination $uefi
+  }else{
+    # Dummy boot images test quoting without assets; they do not prove boot.
+    [IO.File]::WriteAllBytes($bios,(New-Object byte[] 4096))
+    [IO.File]::WriteAllBytes($uefi,(New-Object byte[] 1474560))
+  }
   'Oscdimg native-argument regression fixture.' | Set-Content -LiteralPath (Join-Path $work 'payload.txt') -Encoding ascii
   $OutputIso=Join-Path $sandbox 'result with spaces.iso'
   $oscdimg=$OscdimgPath

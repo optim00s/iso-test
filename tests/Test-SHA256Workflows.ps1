@@ -1,4 +1,4 @@
-﻿#requires -version 5.1
+#requires -version 5.1
 [CmdletBinding()]
 param()
 $ErrorActionPreference='Stop'
@@ -294,31 +294,10 @@ try {
         Assert ($global:TypeBShaTestState.Calls -contains '--unregister TypeB-Ubuntu-Builder') 'Failed build must unregister only its owned distribution'
         Assert (-not (Test-Path (Join-Path $case 'assets\linux\TypeB-Ubuntu-22.04-WSL-Docker.tar.sha256'))) 'Failed build must not produce a checksum'
     }
-    $case=New-Case 'target-helper'
-    $ubuntu=Join-Path $case 'assets\linux'
-    $helper=Join-Path $ubuntu 'Install-TypeB-Ubuntu-WSL.ps1'
-    Copy-Item -LiteralPath (Join-Path $Repository 'overlay\sources\$OEM$\$1\TypeB-Assets\Ubuntu\Install-TypeB-Ubuntu-WSL.ps1') -Destination $helper
-    $tar=Join-Path $ubuntu 'TypeB-Ubuntu-22.04-WSL-Docker.tar'
-    'prepared fixture' | Set-Content -LiteralPath $tar -Encoding ascii
-    $hash=(Get-FileHash -LiteralPath $tar -Algorithm SHA256).Hash
-    $location=Join-Path $case 'imported'
-    & $helper -ExpectedSha256 $hash -InstallLocation $location
-    Assert (Test-Path (Join-Path $location 'typeb-image.json')) 'Local user import must record ownership'
-    Assert ($global:TypeBShaTestState.Calls.Count -eq 2) 'Local user import must only list and import'
-    $count=$global:TypeBShaTestState.Calls.Count
-    'corrupted' | Set-Content -LiteralPath $tar
-    Assert-Throws { & $helper -ExpectedSha256 $hash -InstallLocation $location } 'SHA256 mismatch'
-    Assert ($global:TypeBShaTestState.Calls.Count -eq $count) 'Corrupt target TAR must not reach WSL'
-    $global:TypeBShaTestState.Existing='TypeB-Ubuntu-22.04'
-    $hash=(Get-FileHash -LiteralPath $tar -Algorithm SHA256).Hash
-    Assert-Throws { & $helper -ExpectedSha256 $hash -InstallLocation (Join-Path $case 'unowned') } 'not owned by Type B'
-
-    $tokens=$null; $errors=$null
-    $ast=[Management.Automation.Language.Parser]::ParseFile((Join-Path $Repository 'overlay\sources\$OEM$\$1\TypeB-Offline\Scripts\Initialize-TypeBUser.ps1'),[ref]$tokens,[ref]$errors)
-    $function=$ast.Find({param($node) $node -is [Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq 'Invoke-Wsl'},$true)
-    . ([scriptblock]::Create($function.Extent.Text))
-    Invoke-Wsl -Arguments @('-d','test-distro','-u','root','--exec','wslpath','-a','-u','C:\TypeB space & marker\prepare.sh') | Out-Null
-    Assert ($global:TypeBShaTestState.Calls[$global:TypeBShaTestState.Calls.Count-1] -match 'test-distro -u root --exec wslpath -a -u C:\\TypeB space & marker\\prepare.sh') 'User WSL wrapper must forward every argument'
+    # Target ownership, interrupted imports, corrupt TAR refusal and native
+    # argument/cwd fidelity are covered by Test-TypeBAutomation.ps1 against
+    # the canonical runtime. The former helper allowed arbitrary destinations
+    # that the new importer deliberately refuses.
 
     $case=New-Case 'source-iso-tamper'
     Copy-Item -LiteralPath (Join-Path $Repository 'config\build.json') -Destination (Join-Path $case 'config\build.json')
@@ -326,6 +305,8 @@ try {
     $builderText | Set-Content -LiteralPath (Join-Path $case 'Build-TypeB-ISO.ps1') -Encoding utf8
     $iso=Join-Path $case 'source.iso'
     'untrusted iso' | Set-Content -LiteralPath $iso
+    # Isolate source SHA rejection from the separately tested build preflight.
+    '[pscustomobject]@{missingOrWrongSize=@();enoughSpace=$true}' | Set-Content -LiteralPath (Join-Path $case 'scripts\Get-TypeBBuildPlan.ps1')
     Assert-Throws { & (Join-Path $case 'Build-TypeB-ISO.ps1') -SourceIso $iso } 'Windows source ISO SHA256 mismatch'
     Assert (-not (Test-Path (Join-Path $case 'work'))) 'Invalid Windows source ISO must fail before media staging'
 

@@ -1,4 +1,4 @@
-﻿[CmdletBinding()]
+[CmdletBinding()]
 param()
 $ErrorActionPreference='Stop'
 $root=Split-Path $PSScriptRoot -Parent
@@ -9,8 +9,15 @@ $text=$xml.OuterXml
 foreach($forbidden in @('LocalAccounts','AutoLogon','<Password>','<ProductKey>')) {
   if ($text -match [regex]::Escape($forbidden)) { throw "Forbidden unattended content found: $forbidden" }
 }
-$runtime=Join-Path $root 'overlay\sources'
-foreach($file in Get-ChildItem -LiteralPath $runtime -File -Recurse) {
+$runtime=Join-Path $root 'runtime'
+foreach($name in @('Install-TypeB.ps1','Initialize-TypeBUser.ps1','Start-TypeBUserSetup.ps1','TypeB-UserCommon.ps1','Install-TypeB-Ubuntu-WSL.ps1')){
+  $runtimeFile=Join-Path $runtime $name
+  if(-not (Test-Path -LiteralPath $runtimeFile -PathType Leaf)){throw "Runtime source missing: $name"}
+  $tokens=$null;$parseErrors=$null
+  $null=[Management.Automation.Language.Parser]::ParseFile($runtimeFile,[ref]$tokens,[ref]$parseErrors)
+  if($parseErrors.Count){throw "Runtime source does not parse: $name"}
+}
+foreach($file in Get-ChildItem -LiteralPath $runtime,(Join-Path $root 'overlay\sources') -File -Recurse) {
   $raw=Get-Content -LiteralPath $file.FullName -Raw -ErrorAction SilentlyContinue
   if ($raw -and $raw -match '(?i)Invoke-WebRequest|Invoke-RestMethod|Start-BitsTransfer|winget\s+(install|download)|https?://') {
     throw "Runtime network primitive/URL found in $($file.FullName). Target deployment must be offline."

@@ -72,3 +72,7 @@
 __pycache__/
 .DS_Store
 Thumbs.db
+/tests/test-fixtures/
+/tests/.oscdimg-tests-*/
+/tests/.sha256-tests-*/
+/validation/*.txt
